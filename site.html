@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug24 Sellers</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('india-flag.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    a.link-button, .nav-link {
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 0;
+      border: none;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+    a.link-button:hover, .nav-link:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+    /* Link to 24.de (oben links) */
+    .small-link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    /* Bold title Gandhi (weiter nach oben) */
+    .gandhi-title {
+      position: absolute;
+      top: 60px;
+      left: 50px;
+      font-size: 64px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    /* Top right register/login */
+    .top-right-register {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    /* Navigation buttons in center top */
+    .nav-buttons {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+    }
+    /* Transparent Gandhi head (verschoben weiter nach unten) */
+    .gandhi-image {
+      position: absolute;
+      top: 45%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      max-width: 500px;
+      opacity: 0.9;
+    }
+    /* Bottom right text field */
+    .text-field {
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+    }
+    .text-field textarea {
+      width: 300px;
+      height: 160px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      resize: none;
+      white-space: pre-wrap;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Link to 24.de -->
+  <div class="small-link">
+    <a href="https://www.Drogen24.de" class="link-button" target="_blank">Drogen24.de</a>
+  </div>
+
+  <!-- Gandhi Title -->
+  <div class="gandhi-title">Gandhi</div>
+
+  <!-- Register / Login Links -->
+  <div class="top-right-register">
+    <a href="/register" class="link-button">Registrieren</a>
+    <a href="/login" class="link-button">Login</a>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="nav-buttons">
+    <a href="#gras" class="nav-link">Gras</a>
+    <a href="#koks" class="nav-link">Koks</a>
+    <a href="#meth" class="nav-link">Meth</a>
+    <a href="#nikotin" class="nav-link">Nikotin</a>
+  </div>
+
+  <!-- Gandhi Transparent Head -->
+  <img src="gandhi.png" alt="Gandhi" class="gandhi-image">
+
+  <!-- Text Field -->
+  <div class="text-field">
+    <textarea>
+Unser bester Dealer verkauft ihnen alle Sorten
+von Drogen zu Spitzenpreisen! Jetzt bestellen
+und noch heute genießen mit blitzschneller
+Lieferung und tollem Service!
+    </textarea>
+  </div>
+
+</body>
+</html>
