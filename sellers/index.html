@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug24 Sellers</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      /* Bunter Hintergrund */
+      background: linear-gradient(135deg, #ffe6e6 0%, #e6f7ff 100%);
+      color: #333;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 2.5rem;
+      color: #ff3366;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+      /* Pastell-Farben alternierend */
+      background: #fff;
+    }
+    .card:nth-child(1) { border-top: 4px solid #ff3366; }
+    .card:nth-child(2) { border-top: 4px solid #33ccff; }
+    .card:nth-child(3) { border-top: 4px solid #ffcc33; }
+    .card:nth-child(4) { border-top: 4px solid #33ff99; }
+    .card:nth-child(5) { border-top: 4px solid #cc33ff; }
+    .card:nth-child(6) { border-top: 4px solid #ff6633; }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #444;
+    }
+    .card-desc {
+      flex: 1;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      color: #555;
+    }
+    .card-link {
+      align-self: flex-start;
+      text-decoration: none;
+      font-weight: 600;
+      color: #ff3366;
+      transition: color 0.2s;
+    }
+    .card-link:hover {
+      color: #cc2955;
+    }
+  </style>
+</head>
+<body>
+  <h1>Unsere Top-Verkäufer</h1>
+  <div class="cards">
+    <!-- Dealer Gandhi -->
+    <div class="card">
+      <img src="gandhi.png" alt="Gandhi">
+      <div class="card-content">
+        <div class="card-title">Gandhi</div>
+        <div class="card-desc">Unser bester Dealer, weitgefächertes Angebot, von Meth zu Kokain. Schneller Versand und Diskretion. Kundenzufriedenheit ist garantiert.</div>
+        <a href="https://gandhikocht.github.io" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <!-- Jochen der Rochen -->
+    <div class="card">
+      <img src="jochen.webp" alt="Jochen der Rochen">
+      <div class="card-content">
+        <div class="card-title">Jochen der Rochen</div>
+        <div class="card-desc">Flossengestählter Großhändler für Koks und Co. Mit Jochen surfst du auf der Welle der Zufriedenheit.</div>
+        <a href="#" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <!-- Bobritto bandito -->
+    <div class="card">
+      <img src="bandito.png" alt="Bobritto bandito">
+      <div class="card-content">
+        <div class="card-title">Bobritto bandito</div>
+        <div class="card-desc">Bobritto bietet dir ein breites Sortiment von Meth in Spitzenqualität. Schnelle Lieferung innerhalb einer Stunde.</div>
+        <a href="#" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <!-- Mr. Marx -->
+    <div class="card">
+      <img src="marx.jpg" alt="Mr. Marx">
+      <div class="card-content">
+        <div class="card-title">Mr. Marx</div>
+        <div class="card-desc">Mr. Marx liefert dir reines Nikotin und Zigarillos mit diskretem Versand. Treue Kunden erhalten exklusive Rabatte.</div>
+        <a href="#" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <!-- Crazy Carl -->
+    <div class="card">
+      <img src="daisy.png" alt="Crazy Daisy">
+      <div class="card-content">
+        <div class="card-title">Crazy Daisy</div>
+        <div class="card-desc">Die wilde Dealerin für bunte Pillen und Mixkisten. Immer einen Knall wert!</div>
+        <a href="#" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <!-- Silvia Speed -->
+    <div class="card">
+      <img src="speed.jpg" alt="Speed">
+      <div class="card-content">
+        <div class="card-title">Speed</div>
+        <div class="card-desc">Schnell, schneller, Speed! Sein Versand ist so fix, dass du ihn kaum einholen kannst. Für dringende Last-Minute Einkäufe ist er der Richtige.</div>
+        <a href="#" class="card-link">Mehr erfahren</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
