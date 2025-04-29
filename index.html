@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drug24 Sellers</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
     body {
@@ -11,52 +13,66 @@
       padding: 0;
       background: url('india-flag.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: 'Lora', serif;
       color: #fff;
       position: relative;
       height: 100vh;
       overflow: hidden;
     }
+    /* Buttons & Links */
     a.link-button, .nav-link {
       display: inline-block;
-      padding: 8px 16px;
-      margin: 0;
+      background: transparent;
       border: none;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.8);
-      color: #333;
-      font-size: 14px;
-      cursor: pointer;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      padding: 8px 12px;
       text-decoration: none;
-      text-align: center;
+      transition: transform 0.2s, color 0.2s;
     }
-    a.link-button:hover, .nav-link:hover {
-      background: rgba(255, 255, 255, 1);
+    /* Hover for interactive buttons */
+    a.link-button:hover,
+    .nav-link:hover {
+      color: #ffd700;
+      transform: scale(1.1);
     }
-    /* Link to 24.de (oben links) */
+    /* Home icon */
+    .home-icon {
+      font-size: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    /* 24.de link (oben links) */
     .small-link {
       position: absolute;
       top: 10px;
       left: 10px;
+      display: flex;
+      align-items: center;
+      z-index: 3;
     }
-    /* Bold title Gandhi (weiter nach oben) */
+    /* Bold title Gandhi (weiter oben links) */
     .gandhi-title {
       position: absolute;
-      top: 60px;
-      left: 50px;
-      font-size: 64px;
-      font-weight: bold;
+      top: 50px;
+      left: 10px;
+      font-size: 72px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+      z-index: 3;
     }
-    /* Top right register/login */
+    /* Register / Login (oben rechts) */
     .top-right-register {
       position: absolute;
       top: 10px;
       right: 10px;
       display: flex;
       gap: 10px;
+      z-index: 3;
     }
-    /* Navigation buttons in center top */
+    /* Navigation (zentral oben) */
     .nav-buttons {
       position: absolute;
       top: 20px;
@@ -64,41 +80,41 @@
       transform: translateX(-50%);
       display: flex;
       gap: 20px;
+      z-index: 3;
     }
-    /* Transparent Gandhi head (verschoben weiter nach unten) */
+    /* Gandhi-Bild */
     .gandhi-image {
       position: absolute;
       top: 45%;
       left: 75%;
       transform: translate(-50%, -50%);
-      max-width: 500px;
+      max-width: 600px;
       opacity: 0.9;
+      z-index: 1;
     }
-    /* Bottom right text field */
-    .text-field {
+    /* Text-Box unten rechts */
+    .text-box {
       position: absolute;
       bottom: 20px;
       right: 10px;
-    }
-    .text-field textarea {
-      width: 300px;
-      height: 160px;
+      max-width: 320px;
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff;
+      background: rgba(0,0,0,0.6);
       padding: 12px;
-      border: none;
       border-radius: 8px;
-      font-size: 14px;
-      resize: none;
-      white-space: pre-wrap;
-      background: rgba(255, 255, 255, 0.8);
-      color: #333;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
 
-  <!-- Link to 24.de -->
+  <!-- 24.de mit Home-Icon -->
   <div class="small-link">
-    <a href="https://www.Drogen24.de" class="link-button" target="_blank">Drogen24.de</a>
+    <span class="home-icon">🏠</span>
+    <a href="#home" class="link-button">sellers.html</a>
   </div>
 
   <!-- Gandhi Title -->
@@ -106,8 +122,8 @@
 
   <!-- Register / Login Links -->
   <div class="top-right-register">
-    <a href="/register" class="link-button">Registrieren</a>
-    <a href="/login" class="link-button">Login</a>
+    <a href="#register" class="link-button">Registrieren</a>
+    <a href="#login" class="link-button">Login</a>
   </div>
 
   <!-- Navigation Links -->
@@ -121,18 +137,15 @@
   <!-- Gandhi Transparent Head -->
   <img src="gandhi.png" alt="Gandhi" class="gandhi-image">
 
-  <!-- Text Field -->
-  <div class="text-field">
-    <textarea>
-Unser bester Dealer verkauft ihnen
-alle Sorten von Drogen,
-zu Spitzenpreisen! 
-
-Jetzt bestellen 
-und noch heute genießen,
-mit blitzschneller Lieferung 
+  <!-- Info Text unten rechts -->
+  <div class="text-box">
+Unser bester Dealer verkauft ihnen<br>
+alle Sorten von Drogen,<br>
+zu Spitzenpreisen!<br><br>
+Jetzt bestellen<br>
+und noch heute genießen,<br>
+mit blitzschneller Lieferung<br>
 und tollem Service!
-    </textarea>
   </div>
 
 </body>
